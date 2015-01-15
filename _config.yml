@@ -1,13 +1,13 @@
 # Site settings
-title: Clean Blog
+title: Paweł Nguyen
 header-img: img/home-bg.jpg
-email: your-email@yourdomain.com
-description: "Write your site description here. It will be used as your sites meta description as well!"
-baseurl: "/startbootstrap-clean-blog-jekyll"
-url: "http://yourdomain.com"
-twitter_username: SBootstrap
-github_username:  davidtmiller
-facebook_username:  IronSummitMedia
+email: pawel.nguyen@gmail.com
+description: "Full-stack Ruby on Rails developer, Scrum Master and startup enthusiast"
+baseurl: ""
+url: "http://pawelnguyen.github.io"
+twitter_username: pawel_nguyen
+github_username:  pawelnguyen
+facebook_username:  pawelnguyen
 
 # Build settings
 markdown: kramdown
