@@ -2,7 +2,7 @@
 title: Paweł Nguyen
 header-img: img/home-bg.jpg
 email: pawel.nguyen@gmail.com
-description: "Full-stack Ruby on Rails developer, Scrum Master and startup enthusiast"
+description: "Full-stack Ruby on Rails programmer, ScrumMaster and startup enthusiast. Helps with building MVPs"
 baseurl: ""
 url: "http://pawelnguyen.github.io"
 twitter_username: pawel_nguyen
@@ -14,4 +14,4 @@ markdown: kramdown
 highlighter: pygments
 permalink: pretty
 paginate: 5
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","about.html"]

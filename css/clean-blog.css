@@ -1,7 +1,7 @@
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 20px;
-  color: #404040;
+  color: black;
 }
 p {
   line-height: 1.5;
@@ -17,21 +17,21 @@ h4,
 h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 800;
+  font-weight: 600;
 }
 a {
-  color: #404040;
+  color: #d35400;
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+  color: #e67e22;
 }
 a img:hover,
 a img:focus {
   cursor: zoom-in;
 }
 blockquote {
-  color: #808080;
+  color: #7f8c8d;
   font-style: italic;
 }
 hr.small {
@@ -50,13 +50,23 @@ hr.small {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .navbar-custom .navbar-brand {
-  font-weight: 800;
+  font-weight: 600;
+  color: #d35400;
 }
-.navbar-custom .nav li a {
+.navbar.navbar-custom .navbar-brand:hover,
+.navbar.navbar-custom .navbar-brand:focus {
+  color: #e67e22;
+}
+.navbar.navbar-custom .nav li a {
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 1px;
+  color: #d35400;
+}
+.navbar.navbar-custom .nav li a:hover,
+.navbar.navbar-custom .nav li a:focus {
+  color: #e67e22;
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom {
@@ -64,20 +74,10 @@ hr.small {
     border-bottom: 1px solid transparent;
   }
   .navbar-custom .navbar-brand {
-    color: white;
     padding: 20px;
-  }
-  .navbar-custom .navbar-brand:hover,
-  .navbar-custom .navbar-brand:focus {
-    color: rgba(255, 255, 255, 0.8);
   }
   .navbar-custom .nav li a {
-    color: white;
     padding: 20px;
-  }
-  .navbar-custom .nav li a:hover,
-  .navbar-custom .nav li a:focus {
-    color: rgba(255, 255, 255, 0.8);
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -93,30 +93,16 @@ hr.small {
     transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    border-bottom: 1px solid #f2f2f2;
   }
   .navbar-custom.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
     top: -61px;
     background-color: rgba(255, 255, 255, 0.9);
-    border-bottom: 1px solid #f2f2f2;
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s;
-  }
-  .navbar-custom.is-fixed .navbar-brand {
-    color: #404040;
-  }
-  .navbar-custom.is-fixed .navbar-brand:hover,
-  .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #0085a1;
-  }
-  .navbar-custom.is-fixed .nav li a {
-    color: #404040;
-  }
-  .navbar-custom.is-fixed .nav li a:hover,
-  .navbar-custom.is-fixed .nav li a:focus {
-    color: #0085a1;
   }
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -128,27 +114,19 @@ hr.small {
   }
 }
 .intro-header {
-  background-color: #808080;
-  background: no-repeat center center;
   background-attachment: scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   margin-bottom: 50px;
+  border-bottom: 1px solid #f2f2f2;
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading {
   padding: 100px 0 50px;
-  color: white;
-}
-@media only screen and (min-width: 768px) {
-  .intro-header .site-heading,
-  .intro-header .post-heading,
-  .intro-header .page-heading {
-    padding: 150px 0;
-  }
+  color: black;
 }
 .intro-header .site-heading,
 .intro-header .page-heading {
@@ -194,9 +172,6 @@ hr.small {
   font-weight: 300;
   font-size: 20px;
 }
-.intro-header .post-heading .meta a {
-  color: white;
-}
 @media only screen and (min-width: 768px) {
   .intro-header .post-heading h1 {
     font-size: 55px;
@@ -206,12 +181,12 @@ hr.small {
   }
 }
 .post-preview > a {
-  color: #404040;
+  color: black;
 }
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #0085a1;
+  color: #e67e22;
 }
 .post-preview > a > .post-title {
   font-size: 30px;
@@ -224,18 +199,18 @@ hr.small {
   margin-bottom: 10px;
 }
 .post-preview > .post-meta {
-  color: #808080;
+  color: #7f8c8d;
   font-size: 18px;
   font-style: italic;
   margin-top: 0;
 }
 .post-preview > .post-meta > a {
   text-decoration: none;
-  color: #404040;
+  color: black;
 }
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
-  color: #0085a1;
+  color: #e67e22;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -315,7 +290,7 @@ footer .copyright {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #0085a1;
+  color: #e67e22;
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #eeeeee;
@@ -324,7 +299,7 @@ form .row:first-child .floating-label-form-group {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 1px;
   border-radius: 0;
   padding: 15px 25px;
@@ -335,8 +310,8 @@ form .row:first-child .floating-label-form-group {
 }
 .btn-default:hover,
 .btn-default:focus {
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
   color: white;
 }
 .pager {
@@ -347,7 +322,7 @@ form .row:first-child .floating-label-form-group {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 1px;
   padding: 10px 5px;
   background-color: white;
@@ -363,26 +338,26 @@ form .row:first-child .floating-label-form-group {
 .pager li > a:hover,
 .pager li > a:focus {
   color: white;
-  background-color: #0085a1;
-  border: 1px solid #0085a1;
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
 }
 .pager .disabled > a,
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
 .pager .disabled > span {
-  color: #808080;
-  background-color: #404040;
+  color: #7f8c8d;
+  background-color: black;
   cursor: not-allowed;
 }
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #e67e22;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #e67e22;
 }
 img::selection {
   color: white;
@@ -393,5 +368,5 @@ img::-moz-selection {
   background: transparent;
 }
 body {
-  webkit-tap-highlight-color: #0085a1;
+  webkit-tap-highlight-color: #e67e22;
 }
