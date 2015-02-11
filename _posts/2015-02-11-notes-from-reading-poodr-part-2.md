@@ -2,6 +2,7 @@
 layout:     post
 title:      "Notes from reading POODR (Part 2)"
 subtitle:   "Ruby tips useful in writing good code"
+share_text: "Ruby tips useful in writing good code - Notes from reading POODR (Part 2)"
 date:       2015-02-11 12:00:00
 author:     "Paweł Nguyen"
 ---
