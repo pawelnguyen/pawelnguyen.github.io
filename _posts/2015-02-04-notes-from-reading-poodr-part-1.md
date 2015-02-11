@@ -120,3 +120,5 @@ Inheritance gives you message delegation for free at the cost of maintaining a c
 Each of the topics I mentioned in this post is very broad and each of them could be described in detail in a separate
 blog post. But the idea here was to gather notes that are essence of POODR and that help me in my day-to-day work.
 If they helped you as well, don't hesitate to share them.
+
+You can find Part 2 of those notes [here](/2015/02/11/notes-from-reading-poodr-part-2/)
